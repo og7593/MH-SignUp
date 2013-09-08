@@ -8,12 +8,33 @@ body {
 
 #header {
 	/*background-color: black;*/
-	background-color: #ffc300;
+	background-color: #ff3c00;
 	height: 200px;
 	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 30px 10px 30px 10px;
+	margin: auto;
+	text-align: center;
+}
+
+#footer {
+	background-color: #ff3c00;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
 }
 
 img#logo {
 	height: 200px;
+	/*text-align: center;*/
+	margin: auto;
+	float: center;
+}
 
+body {
+	padding: 0;
 }
