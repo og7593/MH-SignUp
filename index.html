@@ -12,28 +12,32 @@
 	<div id="header">
 		<img src="assets/logo-white.png" id="logo">
 	</div>
-	<div id="mc_embed_signup">
-		<form action="http://michiganhackers.us6.list-manage2.com/subscribe/post?u=15e8ee63058cac3c0f66d3a40&amp;id=4f022470ca" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			<h2>Subscribe to our mailing list</h2>
-		
-		<div class="mc-field-group">
-			<label for="mce-EMAIL">UMICH Email  <span class="asterisk">*</span>
-		</label>
-			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-		</div>
-		<div class="mc-field-group">
-			<label for="mce-FNAME">First Name </label>
-			<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-		</div>
-		<div class="mc-field-group">
-			<label for="mce-LNAME">Last Name </label>
-			<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-		</div>
-		<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-			<div id="mce-responses" class="clear">
-				<div class="response" id="mce-error-response" style="display:none"></div>
-				<div class="response" id="mce-success-response" style="display:none"></div>
-			</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	<div id="content">
+		<form id="personal_data">
+			Uniqname: <input type="text" name="uniqname"></input><br>
+			First Name: <input type="text" name="fname"></input><br>
+			Last Name: <input type="text" name="lname"></input><br>
+			Year: 
+				<select name="year">
+					<option>Freshman</option>
+					<option>Sophomore</option>
+					<option>Junior</option>
+					<option>Senior</option>
+				</select><br>
+			Major:
+				<select name="major">
+					<option>ENG-CS</option>
+					<option>ENG-CE</option>
+					<option>ENG-EE</option>
+					<option>ENG-Other</option>
+					<option>LSA-CS</option>
+					<option>LSA-Other</option>
+					<option>Ross</option>
+					<option>Art/Architecture/Music</option>
+					<option>Other</option>
+					<option>Undecided</option>
+				</select><br>
+			<button id="submit">Submit</button>
 		</form>
 	</div>
 	<div id="footer"></div>
