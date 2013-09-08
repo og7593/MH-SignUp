@@ -29,6 +29,10 @@ body {
 	width: 80%;
 }
 
+form {
+	font-family: MH-Font;
+	/*font-size: 50pt;*/
+}
 /*#mc_embed_signup {
 	position: relative;
 	top: 300px;
