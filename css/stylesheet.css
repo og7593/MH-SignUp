@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'MH-Font';
+    src: url('../font/Ultramagnetic.ttf');
+}
+
+body {
+}
+
+#header {
+	/*background-color: black;*/
+	background-color: #ffc300;
+	height: 200px;
+	width: 100%;
+}
+
+img#logo {
+	height: 200px;
+
+}
