@@ -8,26 +8,26 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	
+
 </head>
 <body>
 	<div id="header">
 		<img src="assets/logo-white.png" id="logo">
 	</div>
 	<div id="content">
-		<form id="personal_data">
-			Uniqname: <input type="text" name="uniqname"></input><br>
-			First Name: <input type="text" name="fname"></input><br>
-			Last Name: <input type="text" name="lname"></input><br>
+		<form id="personal_data" method="POST">
+			Uniqname: <input type="text" id="uniqname"></input><br>
+			First Name: <input type="text" id="fname"></input><br>
+			Last Name: <input type="text" id="lname"></input><br>
 			Year: 
-				<select name="year">
+				<select id="year">
 					<option>Freshman</option>
 					<option>Sophomore</option>
 					<option>Junior</option>
 					<option>Senior</option>
 				</select><br>
 			Major:
-				<select name="major">
+				<select id="major">
 					<option>ENG-CS</option>
 					<option>ENG-CE</option>
 					<option>ENG-EE</option>
