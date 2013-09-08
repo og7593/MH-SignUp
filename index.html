@@ -15,31 +15,83 @@
 		<img src="assets/logo-white.png" id="logo">
 	</div>
 	<div id="content">
-		<form id="personal_data" method="POST">
-			Uniqname: <input type="text" id="uniqname"></input><br>
-			First Name: <input type="text" id="fname"></input><br>
-			Last Name: <input type="text" id="lname"></input><br>
-			Year: 
-				<select id="year">
-					<option>Freshman</option>
-					<option>Sophomore</option>
-					<option>Junior</option>
-					<option>Senior</option>
-				</select><br>
-			Major:
-				<select id="major">
-					<option>ENG-CS</option>
-					<option>ENG-CE</option>
-					<option>ENG-EE</option>
-					<option>ENG-Other</option>
-					<option>LSA-CS</option>
-					<option>LSA-Other</option>
-					<option>Ross</option>
-					<option>Art/Architecture/Music</option>
-					<option>Other</option>
-					<option>Undecided</option>
-				</select><br>
-			<button id="submit">Submit</button>
+		<form id="personal_data">
+			<table>
+				<thead colspan="2">Sign up for our E-mail list!</thead>
+				<tr>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Uniqname: </td>
+					<td id="space"></td>
+
+					<td><input type="text" id="uniqname"></input></td>
+				</tr>
+				<tr>
+					<td>First Name: </td>
+					<td id="space"></td>
+					
+
+					<td><input type="text" id="fname"></input></td>
+				</tr><tr>
+					<td>Last Name: </td>
+					<td id="space"></td>
+					
+
+					<td><input type="text" id="lname"></input></td>
+				</tr>
+				<tr>
+					<td>Year: </td>
+					<td id="space"></td>
+					
+
+					<td>
+						<select id="year">
+							<option>Freshman</option>
+							<option>Sophomore</option>
+							<option>Junior</option>
+							<option>Senior</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Major: </td>
+					<td id="space"></td>
+					
+					<td>
+						<select id="major">
+							<option>ENG-CS</option>
+							<option>ENG-CE</option>
+							<option>ENG-EE</option>
+							<option>ENG-Other</option>
+							<option>LSA-CS</option>
+							<option>LSA-Other</option>
+							<option>Ross</option>
+							<option>Art/Architecture/Music</option>
+							<option>Other</option>
+							<option>Undecided</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>What do you want to learn?</td>
+					<td></td>
+					<td>
+						 <input type="radio" class="topic">How to program</input><br>
+						 <input type="radio" class="topic">How to create your own website</input><br>
+						 <input type="radio" class="topic">How to write iOS/Android apps</input><br>
+						 <input type="radio" class="topic">Learn to do things with hardware</input><br>
+						 <input type="radio" class="topic">Other</input><br>
+						 </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<button id="submit">Submit</button>
+					</td>
+					<td></td>
+				</tr>
+			</table>			
 		</form>
 	</div>
 	<div id="footer"></div>
