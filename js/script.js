@@ -1,12 +1,25 @@
+String.prototype.toCap = function() {
+	var string = this.toString();
+	if(!string.length) return;
+	return string[0].toUpperCase() + string.slice(1);
+};
+
+console.log("test".toCap());
+
 $(document).ready(function() {
-	$('#submit').click(function() {
-		var userData = new Object();
-		userData.flname = $('#fname').val().capitalize() + " " + $('#lname').val().capitalize();
+	$('#submit').click(function(e) {
+
+		e.preventDefault();
+
+		var userData = {};
+
+		userData.name = $('#fname').val().toCap() + " " + $('#lname').val().toCap();
 		userData.email = $('#uniqname').val() + "@umich.edu";;
 		userData.year = $('#year').val();
 		userData.major = $('#major').val();
-
-		alert(userData.flname + userData.email + userData.major + userData.year);
+ 
+		console.log(userData);
 
 	})
+
 });
