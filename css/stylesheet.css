@@ -1,9 +1,10 @@
 @font-face {
     font-family: 'MH-Font';
-    src: url('../font/Ultramagnetic.ttf');
+    src: url('../fonts/Ultramagnetic.ttf');
 }
 
 body {
+	background-color: #ff3c00;
 }
 
 #header {
@@ -11,27 +12,57 @@ body {
 	background-color: #ff3c00;
 	height: 200px;
 	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	padding: 30px 10px 30px 10px;
+	/*position: fixed;*/
+	/*left: 0;*/
+	/*top: 0;*/
+	/*padding: 30px 10px 30px 10px;*/
 	margin: auto;
 	text-align: center;
 }
 #content{
-	background:#fff; 
+	background:#ff3c00; 
 	clear:left; 
 	font:14px Helvetica,Arial,sans-serif; 
-	position: relative;
-	top: 300px;
+	/*position: relative;*/
+	/*top: 300px;*/
+	padding-top: 80px;
 	margin: auto;
 	height: 500px;
 	width: 80%;
 }
 
 form {
+	color: white;
 	font-family: MH-Font;
+	font-size: 22pt;
+	margin: auto;
+	padding-left: 25%;
+	/*text-align: right;*/
+	vertical-align: middle;
 	/*font-size: 50pt;*/
+}
+
+table thead {
+	/*height: 75px;*/
+	/*padding: 20px;*/
+	text-align: center;
+}
+
+table input.topic {
+	font-size: 16pt;
+}
+
+td {
+	text-align: left;
+}
+
+#submit {
+	/*text-align: center;*/
+	margin:auto;
+}
+
+#space {
+	width: 75px;
 }
 /*#mc_embed_signup {
 	position: relative;
