@@ -19,6 +19,13 @@ body {
 	text-align: center;
 }
 
+#content {
+	position: relative;
+	top: 300px;
+	margin: auto;
+	height: 50%;
+}
+
 #footer {
 	background-color: #ff3c00;
 	height: 100px;
