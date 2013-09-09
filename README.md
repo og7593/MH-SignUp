@@ -1,4 +1,4 @@
 MH-SignUp
 =========
 
-Michigan Hackers Sign Up Page
+Michigan Hackers Sign Up Page (Front End)
