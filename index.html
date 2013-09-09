@@ -4,7 +4,7 @@
 
 	<title>Sign-Up</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-	<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -14,86 +14,75 @@
 	<div id="header">
 		<img src="assets/logo-white.png" id="logo">
 	</div>
-	<div id="content">
-		<form id="personal_data">
-			<table>
-				<thead colspan="2">Sign up for our E-mail list!</thead>
-				<tr>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Uniqname: </td>
-					<td id="space"></td>
+	<div id="content" overflow-y="auto">
 
-					<td><input type="text" id="uniqname"></input></td>
-				</tr>
-				<tr>
-					<td>First Name: </td>
-					<td id="space"></td>
-					
-
-					<td><input type="text" id="fname"></input></td>
-				</tr><tr>
-					<td>Last Name: </td>
-					<td id="space"></td>
-					
-
-					<td><input type="text" id="lname"></input></td>
-				</tr>
-				<tr>
-					<td>Year: </td>
-					<td id="space"></td>
-					
-
-					<td>
-						<select id="year">
-							<option>Freshman</option>
-							<option>Sophomore</option>
-							<option>Junior</option>
-							<option>Senior</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>Major: </td>
-					<td id="space"></td>
-					
-					<td>
-						<select id="major">
-							<option>ENG-CS</option>
-							<option>ENG-CE</option>
-							<option>ENG-EE</option>
-							<option>ENG-Other</option>
-							<option>LSA-CS</option>
-							<option>LSA-Other</option>
-							<option>Ross</option>
-							<option>Art/Architecture/Music</option>
-							<option>Other</option>
-							<option>Undecided</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>What do you want to learn?</td>
-					<td></td>
-					<td>
-						 <input type="radio" class="topic">How to program</input><br>
-						 <input type="radio" class="topic">How to create your own website</input><br>
-						 <input type="radio" class="topic">How to write iOS/Android apps</input><br>
-						 <input type="radio" class="topic">Learn to do things with hardware</input><br>
-						 <input type="radio" class="topic">Other</input><br>
-						 </td>
-				</tr>
-				<tr>
-					<td></td>
-					<td>
-						<button id="submit">Submit</button>
-					</td>
-					<td></td>
-				</tr>
-			</table>			
+		<form id="personal_data" class="form-horizontal" role="form">
+		  <div class="form-group">
+		    <label for="uniqname" class="col-lg-2 control-label">Uniqname</label>
+		    <div class="col-lg-5">
+		      <input type="text" class="form-control" id="uniqname" placeholder="Enter Uniqname">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="name" class="col-lg-2 control-label">Name</label>
+		    <div class="col-lg-5">
+		      <input type="text" class="form-control" id="name" placeholder="Enter Name">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		  	<label for="yearSelect" class="col-lg-2 control-label">Year</label>
+		  	<div class="col-lg-3">
+			  	<select id="yearSelect" class="form-control">
+				  <option>Freshman</option>
+				  <option>Sophomore</option>
+				  <option>Junior</option>
+				  <option>Senior</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+		  	<label for="majorSelect" class="col-lg-2 control-label">Major</label>
+		  	<div class="col-lg-3">
+			  	<select id="majorSelect" class="form-control">
+				  <option>CS-Eng</option>
+				  <option>EE-Eng</option>
+				  <option>CE-Eng</option>
+				  <option>Other-Eng</option>
+				  <option>CS-LSA</option>
+				  <option>Other-LSA</option>
+				  <option>Ross</option>
+				  <option>Art/Music/Architecture</option>
+				  <option>Other</option>
+				  <option>Undecided</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="interests" class="col-lg-2 control-label">What are you interested in?</label>
+			<div class="col-lg-5">
+				<div class="checkbox" name="interests">
+					<h4><input type="checkbox" value="How to program">How to program</h4>
+				</div>
+				<div class="checkbox" name="interests">
+					<h4><input type="checkbox" value="How to create your own website">How to create your own website</h4>
+				</div>
+				<div class="checkbox" name="interests">
+					<h4><input type="checkbox" value="How to write iOS/Android apps">How to write iOS/Android apps</h4>
+				</div>
+				<div class="checkbox" inamed="interests">
+					<h4><input type="checkbox" value="How to do things with hardware">How to do things with hardware</h4>
+				</div>
+				<div class="checkbox" name="interests">
+					<h4><input type="checkbox" value="Other">Other</h4>
+				</div>
+			</div>
+		</div>
+		  <div class="form-group">
+		    <div class="col-lg-offset-2 col-lg-10">
+		      <button type="submit" class="btn btn-default" id="submit">Submit</button>
+		    </div>
+		  </div>
 		</form>
 	</div>
-	<div id="footer"></div>
 </body>
 </html>
